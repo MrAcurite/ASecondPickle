@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!ID={__id__}>
+<!TITLE={__title__}>
+<!DATE={__date__}>
+<!YEAR={__year__}>
+<!MONTH={__month__}>
+<!FILE={__file__}>
+<!FTITLE={__ftitle__}>
+<!FLINK={__flink__}>
+<!PTITLE={__ptitle__}>
+<!PLINK={__plink__}>
+<!NTITLE={__ntitle__}>
+<!NLINK={__nlink__}>
+<!LTITLE={__ltitle__}>
+<!LLINK={__llink__}>
+<html>
+<head>
+<title>A Second Pickle: A journal of stupid bullshit</title>
+<link rel="icon" type="image/png" sizes="192x192" href="https://github.com/MrAcurite/ASecondPickle/raw/main/favicon.png">
+<style>
+
+div.text {
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 25%;
+	text-align: center;
+	word-wrap: break-word;
+	font-family: "Courier New", monospace;
+}
+
+div.bib {
+	position: absolute;
+	bottom: 5%;
+	margin-left: 5%;
+	width: 25%;
+	text-align: left;
+	word-wrap: break-word;
+	font_family: "Courier New", monospace;
+}
+
+div.pdf {
+	position: absolute;
+	top: 5%;
+	left: 35%;
+	margin-right: 5%;
+	width: 60%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-image: url('https://github.com/MrAcurite/ASecondPickle/raw/main/bosch.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgba(255,255,255,0.6);
+	background-blend-mode: lighten;
+}
+
+</style>
+</head>
+
+<header class="page-header">
+	<div class="text">
+		<h1>A Second Pickle</h1>
+		</n>
+		<h5>A journal of stupid bullshit</h5>
+		</n>
+		<hr>
+		</n>
+		<h3>"{__title__}"</h3>
+		</n>
+		{__date__}
+		</n>
+		<hr>
+		</n>
+		<a href="{__flink__}">
+			<img src="https://github.com/MrAcurite/ASecondPickle/raw/main/first.png" title="{__ftitle__}">
+		</a>
+		<a href="{__plink__}">
+			<img src="https://github.com/MrAcurite/ASecondPickle/raw/main/prev.png" title="{__ptitle__}">
+		</a>
+		<a href="{__nlink__}">
+			<img src="https://github.com/MrAcurite/ASecondPickle/raw/main/next.png" title="{__ntitle__}">
+		</a>
+		<a href="{__llink__}">
+			<img src="https://github.com/MrAcurite/ASecondPickle/raw/main/last.png" title="{__ltitle__}">
+		</a>
+	</div>
+	
+	<div class="bib">
+		<h5>Bibtex:</h5>
+		@misc{pickle2{__file__},
+		<br>
+		author = "Acurite, Ethan",
+		<br>
+		title = "{__title__}",
+		<br>
+		month = "{__month__}",
+		<br>
+		year = "{__year__}"}
+	</div>
+	
+</header>
+<body>
+	<div class="pdf">
+		<object data="embedded_pdf" type="application/pdf">
+			<iframe src="https://docs.google.com/gview?url=https://github.com/MrAcurite/ASecondPickle/raw/main/{__file__}.pdf&embedded=true" style="width:60vw; height:90vh;" frameborder="1"></iframe>
+		</object>
+	</div>
+</body>
+</html>
